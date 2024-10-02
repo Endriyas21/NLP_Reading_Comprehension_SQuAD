@@ -37,6 +37,7 @@ context = "My name is John Doe and I live in New York."
 question = "What is my name?"
 result = run_example(qa_pipeline, context, question)
 print(result)
+```
 
 ## Visualizations
 
@@ -47,5 +48,8 @@ The project includes various visualizations to help understand the model's perfo
 - **Answer Start Positions**: Scatter plot showing the start positions of answers in the context.
 - **Word Clouds**: Word clouds for contexts, questions, and answers.
 
-*Note: A Google Colab file has been added to the repository for easy experimentation.*
+_Note: A Google Colab file has been added to the repository for easy experimentation._
+
+```
+
 ```
