@@ -37,6 +37,7 @@ context = "My name is John Doe and I live in New York."
 question = "What is my name?"
 result = run_example(qa_pipeline, context, question)
 print(result)
+{'score': 0.990822434425354, 'start': 11, 'end': 19, 'answer': 'John Doe'}
 ```
 
 ## Visualizations
