@@ -3,6 +3,7 @@ from load_data import load_datasets, preprocess_squad
 from qa_pipeline import initialize_pipeline, run_example, generate_predictions
 from visualization import plot_score, plot_distributions, generate_wordcloud
 from utils import check_gpu
+from train_model import train_model
 
 # Install dependencies
 install_dependencies()
@@ -15,7 +16,10 @@ train_data, dev_data = load_datasets()
 train_contexts, train_questions, train_answers = preprocess_squad(train_data)
 dev_contexts, dev_questions, dev_answers = preprocess_squad(dev_data)
 
-# Initialize the question-answering pipeline
+# Train the model
+train_model(train_contexts, train_questions, train_answers)
+
+# Initialize the question-answering pipeline with the trained model
 qa_pipeline = initialize_pipeline()
 
 # Run an example
